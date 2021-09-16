@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Description: A simple AWS Lambda for searching records within a DynamoDB table.
 Resources:
-  GetBooksFx:
+  PostPlayersFx:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: target/LambdaPost-1.0-SNAPSHOT.jar
@@ -13,4 +13,4 @@ Resources:
       Timeout: 30
       Tracing: Active
       Policies:
-        - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
+      - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
